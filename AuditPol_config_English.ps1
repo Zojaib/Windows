@@ -5,6 +5,7 @@ $auditPath = "C:\Users\$env:USERNAME\Desktop\"
 $backupPathBefore = Join-Path $auditPath $backupfileBefore
 $backupPathAfter  = Join-Path $auditPath $backupfileAfter
 
+#Backup of current auditpol config
 auditpol /backup /file:$backupPathBefore
 
 # ---------- CSV log setup ----------
